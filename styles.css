@@ -9,6 +9,10 @@
     font-size: 16px;
     line-height: 1.6;
   }
+
+  ul {
+    list-style-type: none;
+  }
   
   header {
     position: fixed;
@@ -36,12 +40,20 @@
     color: #fff;
     text-decoration: none;
   }
+
+  nav ul li a:hover {
+    color: #f0e5c9;
+  }  
   
   .logo {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
   }
+
+  .logo:hover {
+    color: #f0e5c9;
+  }  
   
   section {
     min-height: 100vh;
@@ -64,10 +76,55 @@
   #skills {
     background-color: #f0e5c9;
   }
+
+  .skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .skill-icon {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.1);
+  }
+  
   
   #projects {
-    background-color: #0d3b66;
+    background-image: url("path/to/vintage-store-shelf.jpg");
+    background-size: cover;
+    background-position: center;
+  }  
+
+  .project-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
+  
+  .project-list li {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .project-list img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .project-list img:hover {
+    transform: scale(1.1);
+  }
+  
   
   #contact {
     background-color: #0d3b66;
@@ -77,5 +134,55 @@
     background-color: #f0e5c9;
     padding: 1rem;
     text-align: center;
-    color: #0d3
+    color: #0d3b66;
+  }
+
+button {
+    background-color: #0d3b66;
+    color: #f0e5c9;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1c5a84;
+  }  
+
+section {
+    padding: 2rem;
+  }
+
+/* smooth scroll for links */
+a[href*="#"] {
+    scroll-behavior: smooth;
+  }
+
+section::before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+  }
+  
+/* media query for mobile devices */
+@media screen and (max-width: 550px) {
+    nav ul {
+      display: none;
+    }
+  
+    .skill-list {
+      gap: 0.5rem;
+    }
+  
+    .skill-icon {
+      width: 80px;
+    }
+  
+    .project-list {
+      gap: 0.5rem;
+    }
+  }
   
