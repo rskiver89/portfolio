@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 100;
+    padding: 1rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #home {
+    background-image: url("path/to/your/vintage-vinyl-store-image.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #about {
+    background-color: #f0e5c9;
+    color: #0d3b66;
+  }
+  
+  #skills {
+    background-color: #f0e5c9;
+  }
+  
+  #projects {
+    background-color: #0d3b66;
+  }
+  
+  #contact {
+    background-color: #0d3b66;
+  }
+  
+  footer {
+    background-color: #f0e5c9;
+    padding: 1rem;
+    text-align: center;
+    color: #0d3
+  
