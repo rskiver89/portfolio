@@ -74,7 +74,8 @@
   }
   
   #skills {
-    background-color: #f0e5c9;
+    background-color: #0d3b66;
+    color: white;
   }
 
   .skill-list {
@@ -96,6 +97,7 @@
   
   
   #projects {
+    background-color: #f0e5c9;
   }  
 
   .project-list {
@@ -124,14 +126,13 @@
   
   
   #contact {
-    background-color: #0d3b66;
+    background-color: #fff;
   }
   
   footer {
-    background-color: #f0e5c9;
+    background-color: #333;
     padding: 1rem;
     text-align: center;
-    color: #0d3b66;
   }
 
 button {
