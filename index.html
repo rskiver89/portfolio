@@ -11,24 +11,40 @@
 <body>
   <header>
     <nav>
-      <a href="#" class="logo">RS</a>
+      <a href="#" class="logo"></a>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <!-- Add this line inside the header, just below the nav element -->
+<div id="name-logo">Ryan Skiver</div>
+
   </header>
   <main>
     <!-- Home -->
-<section id="home">
-    <div class="home-content">
-      <h1>Ryan Skiver</h1>
-      <p>Front-End Web Developer Portfolio</p>
-    </div>
-  </section>
+    <section id="home">
+      <div class="home-content">
+        <h1 class="name">Ryan Skiver</h1>
+        <p>Front-End Web Developer Portfolio</p>
+        <ul class="skill-list">
+          <li>
+            <img src="assets/html.png" alt="HTML" class="skill-icon">
+          </li>
+          <li>
+            <img src="assets/css-3.png" alt="CSS" class="skill-icon">
+          </li>
+          <li>
+            <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
+          </li>
+          <li>
+            <img src="assets/physics.png" alt="React" class="skill-icon">
+          </li>
+        </ul>
+      </div>
+    </section>
   
   <!-- About -->
   <section id="about">
@@ -40,64 +56,67 @@
     </div>
   </section>
   
-<!-- Skills -->
-<section id="skills">
-    <div class="skills-content">
-      <h2>Skills</h2>
-      <ul class="skill-list">
-        <li>
-          <img src="assets/html.png" alt="HTML" class="skill-icon">
-        </li>
-        <li>
-          <img src="assets/css-3.png" alt="CSS" class="skill-icon">
-        </li>
-        <li>
-          <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
-        </li>
-        <li>
-          <img src="assets/physics.png" alt="React" class="skill-icon">
-        </li>
-      </ul>
-    </div>
-  </section>
-  
-  
 <!-- Projects -->
-<section id="projects">
-    <div class="projects-content">
-      <h2>Projects</h2>
-      <ul class="project-list">
-        <li>
-          <a href="https://eclectic-aesthetics.netlify.app/">
-            <img src="assets/eclecticaesthetics.png" alt="Eclectic Aesthetics">
-            Eclectic Aesthetic Blog
-          </a>
-        </li>
-        <li>
-          <a href="https://cinetrial-project.netlify.app/">
-            <img src="assets/Cinetrial.png" alt="Cinetrial Project">
-            Cinetrial
-          </a>
-        </li>
-        <li>
-          <a href="https://zen-quotes-cohort-16.netlify.app/">
-            <img src="assets/zenquotes.png" alt="Zen Quotes Cohort 16">  
-            Zen Quote Generator
-        </li>
-        <li>
-          <a href="https://unilife-project.netlify.app/">
-            <img src="assets/unilife.png" alt="Zen Quotes Cohort 16">  
-            Unilife Project
-          </a>
-        </li>
-        <li>
-            <a href="https://quick-weather-app.netlify.app/">
-              <img src="assets/quickweather.png" alt="Quick Weather">  
-              Quick Weather
+  <section id="projects">
+
+      <div class="project-list">
+
+        <div class="project-container">
+          <div class="project-info">
+            <h2>Eclectic Aesthetic Blog</h2>
+          </div>
+          <div class="project">
+            <a href="https://eclectic-aesthetics.netlify.app/">
+                <img src="assets/eclecticaesthetics.png" alt="Eclectic Aesthetics" class="project-image">
             </a>
-          </li>
-      </ul>
-    </div>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project-info">
+            <h2>Cinetrial</h2>
+          </div>
+          <div class="project">
+            <a href="https://cinetrial-project.netlify.app/">
+              <img src="assets/Cinetrial.png" alt="Cinetrial Project">
+            </a>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project-info">
+            <h2>Zen Quotes</h2>
+          </div>
+          <div class="project">
+            <a href="https://zen-quotes-cohort-16.netlify.app">
+              <img src="assets/zenquotes.png" alt="Zen Quotes Cohort 16">  
+            </a>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project-info">
+            <h2>Unilife</h2>
+          </div>
+          <div class="project">
+            <a href="https://unilife-project.netlify.app/">
+              <img src="assets/unilife.png" alt="Unilife">  
+            </a>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project-info">
+            <h2>Quick Weather</h2>
+          </div>
+        <div class="project">
+          <a href="https://quick-weather-app.netlify.app/">
+            <img src="assets/quickweather.png" alt="Quick Weather">  
+          </a>
+        </div>
+        </div>
+      </div>
+      
   </section>
   
   <!-- Contact content -->

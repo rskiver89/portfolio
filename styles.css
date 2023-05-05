@@ -1,186 +1,254 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Epilogue', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  ul {
-    list-style-type: none;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 100;
-    padding: 1rem 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-  }
-  
-  nav ul {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+body {
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f5f5f7;
+  color: #333;
+}
 
-  nav ul li a:hover {
-    color: #f0e5c9;
-  }  
-  
-  .logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
+ul {
+  list-style-type: none;
+}
 
-  .logo:hover {
-    color: #f0e5c9;
-  }  
-  
-  section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #home {
-    background-image: url("path/to/your/vintage-vinyl-store-image.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  
-  #about {
-    background-color: #f0e5c9;
-    color: #0d3b66;
-  }
-  
-  #skills {
-    background-color: #0d3b66;
-    color: white;
-  }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
 
-  .skill-list {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .skill-icon {
-    width: 100px;
-    height: auto;
-    transition: transform 0.3s;
-  }
-  
-  .skill-icon:hover {
-    transform: scale(1.1);
-  }
-  
-  
-  #projects {
-    background-color: #f0e5c9;
-  }  
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 1rem;
+}
 
-  .project-list {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .project-list li {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .project-list img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-  }
-  
-  .project-list img:hover {
-    transform: scale(1.1);
-  }
-  
-  
-  #contact {
-    background-color: #fff;
-  }
-  
-  footer {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
-  }
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
 
-button {
-    background-color: #0d3b66;
-    color: #f0e5c9;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #1c5a84;
-  }  
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0070c9;
+}
+
+/* Home */
+
+#home {
+  display: flex;
+  justify-content: start;
+  margin-left: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.logo.scrolled {
+  font-size: 1.5rem;
+  width: auto;
+}
+
+.logo.stopped {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.logo:hover {
+  color: #0070c9;
+}
+
+#name-logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 101;
+}
 
 section {
-    padding: 2rem;
-  }
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skill-icon {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s, opacity 0.3s;
+  filter: grayscale(60%);
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Projects */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-container {
+  display: flex;
+  position: relative;
+}
+
+.project-container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.project-container:nth-child(even) {
+  flex-direction: row;
+}
+
+.project-info {
+  font-size: 1.5rem;
+  position: absolute;
+  width: 50%;
+  padding: 1rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-info h2 {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #0070c9;
+  font-weight: bold;
+}
+
+.project-container:nth-child(odd) .project-info {
+  left: 0;
+}
+
+.project-container:nth-child(even) .project-info {
+  text-align: end;
+  right: 0;
+}
+
+.project {
+  background-color: rgba(21, 21, 95, 0.744);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px 0;
+  overflow: hidden;
+  width: 60%;
+  margin-bottom: 32px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-container:nth-child(odd) .project {
+  text-align: end;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+  width: 80%;
+  position: relative;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+button {
+  background-color: #0070c9;
+  color: #fff;
+  border: none;
+  padding: 0.5rem    1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005ea8;
+}
 
 /* smooth scroll for links */
 a[href*="#"] {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 section::before {
-    content: "";
-    display: block;
-    height: 60px;
-    margin-top: -60px;
-    visibility: hidden;
-  }
-  
+  content: "";
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+}
+
 /* media query for mobile devices */
-@media screen and (max-width: 550px) {
-    nav ul {
+@media screen and (max-width: 768px) {
+  nav ul {
       display: none;
-    }
-  
-    .skill-list {
-      gap: 0.5rem;
-    }
-  
-    .skill-icon {
-      width: 80px;
-    }
-  
-    .project-list {
-      gap: 0.5rem;
-    }
   }
-  
+
+  .project-container {
+      flex-direction: column;
+  }
+
+  .project-info {
+      position: static;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+  }
+
+  .project {
+      width: 100%;
+  }
+
+  .skill-list {
+    gap: 0.5rem;
+}
+
+.skill-icon {
+    width: 50px;
+}
+}
+
+
