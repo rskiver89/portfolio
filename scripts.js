@@ -9,6 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 
+// Nav Link Color
 const navLinks = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('section');
 
@@ -67,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
+// Project Hover
 const projects = document.querySelectorAll('.project');
 const projectInfos = document.querySelectorAll('.project-info h2');
 
@@ -81,6 +83,8 @@ projects.forEach((project, index) => {
   });
 });
 
+
+// Footer
 const lastUpdatedElement = document.getElementById('last-updated');
 const lastUpdatedDate = new Date(document.lastModified);
 
