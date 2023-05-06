@@ -105,11 +105,11 @@ section {
   color: white;
 }
 
-.github {
+.profile {
   cursor: pointer;
 }
 
-.github:hover {
+.profile:hover {
   color: #005ea8;
 }
 
