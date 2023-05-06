@@ -33,7 +33,7 @@ sections.forEach(section => observer.observe(section));
   // Name header scroll
 const nameLogo = document.querySelector('#name-logo');
 const header = document.querySelector('header');
-const nameContainer = document.querySelector('#home h1');
+const nameContainer = document.querySelector('#home h2');
 const headerHeight = header.offsetHeight;
 
 window.addEventListener('scroll', () => {
@@ -81,6 +81,16 @@ projects.forEach((project, index) => {
   });
 });
 
+const lastUpdatedElement = document.getElementById('last-updated');
+const lastUpdatedDate = new Date(document.lastModified);
 
+const lastUpdateOptions = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZoneName: 'short'
+};
 
-
+lastUpdatedElement.textContent = lastUpdatedDate.toLocaleString('en-US', lastUpdateOptions);
