@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 
-  const navLinks = document.querySelectorAll('nav ul li a');
+const navLinks = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('section');
 
 const options = {
