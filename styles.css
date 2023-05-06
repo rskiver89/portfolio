@@ -53,18 +53,9 @@ nav ul li a.active {
   color: #0070c9;
 }
 
-.logo {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  transition: all 0.3s;
-  color: #d6d8da;
-}
-
 #name-logo {
   position: fixed;
-  top: 1rem;
+  top: .6rem;
   left: 48px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -138,6 +129,7 @@ section {
 .project-container {
   display: flex;
   position: relative;
+  margin: 64px 0;
 }
 
 .project-container:nth-child(odd) {

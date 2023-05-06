@@ -30,7 +30,7 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 
   
-  // Logo scroll
+  // Name header scroll
 const nameLogo = document.querySelector('#name-logo');
 const header = document.querySelector('header');
 const nameContainer = document.querySelector('#home h1');
