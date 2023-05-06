@@ -75,6 +75,8 @@ section {
   padding: 2rem;
 }
 
+/* Home */
+
 #home {
   display: flex;
   justify-content: start;
@@ -113,33 +115,7 @@ section {
   color: #005ea8;
 }
 
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skill-icon {
-  width: 40px;
-  height: auto;
-  transition: transform 0.3s, opacity 0.3s;
-  filter: grayscale(60%);
-  margin: 16px 0;
-}
-
-.skill-icon:hover {
-  transform: scale(1.1);
-  opacity: 1;
-  filter: grayscale(0%);
-}
-
+/* About */
 .about-content {
   border-top: 2px solid #005ea8;
   border-bottom: 2px solid #005ea8;
@@ -253,10 +229,34 @@ section {
   border-radius: 8px;
   z-index: 0;
   }
-  
-  button:hover {
-  background-color: #005ea8;
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-icon {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s;
+    filter: grayscale(60%);
+    margin: 16px 0;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+
+  /* Contact */
 
   #contact-btn {
     cursor: pointer;
@@ -266,7 +266,7 @@ section {
     color: #005ea8;
   }
 
-  /* Modal styles */
+  /* Contact Modal styles */
 .modal {
   display: none;
   position: fixed;
@@ -345,6 +345,8 @@ textarea {
   transition: background-color 0.3s;
   font-weight: bold;
   }
+
+  /* Footer */
 
   footer {
     background-color: #3c3f41;
