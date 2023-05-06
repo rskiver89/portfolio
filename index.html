@@ -29,18 +29,12 @@
       <div class="home-content">
         <h1 class="name">Ryan Skiver</h1>
         <p>Front-End Web Developer Portfolio</p>
-        <ul class="skill-list">
+        <ul class="list">
           <li>
-            <img src="assets/html.png" alt="HTML" class="skill-icon">
+            <img src="assets/github.png" alt="HTML" class="skill-icon">
           </li>
           <li>
-            <img src="assets/css-3.png" alt="CSS" class="skill-icon">
-          </li>
-          <li>
-            <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
-          </li>
-          <li>
-            <img src="assets/physics.png" alt="React" class="skill-icon">
+            <img src="assets/linkedin.png" alt="CSS" class="skill-icon">
           </li>
         </ul>
       </div>
@@ -64,6 +58,21 @@
         <div class="project-container">
           <div class="project-info">
             <h2>Eclectic Aesthetic Blog</h2>
+            <p>Blog style collection of things that i find aesthetically pleasing</p>
+            <div class="skills">
+              <div class="skill-item">
+                <img src="assets/html.png" alt="HTML" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/css-3.png" alt="CSS" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/physics.png" alt="React" class="skill-icon">
+              </div>
+            </div>
           </div>
           <div class="project">
             <a href="https://eclectic-aesthetics.netlify.app/">
@@ -75,6 +84,21 @@
         <div class="project-container">
           <div class="project-info">
             <h2>Cinetrial</h2>
+            <p>Netflix style database for movie trailers</p>
+            <div class="skills">
+              <div class="skill-item">
+                <img src="assets/html.png" alt="HTML" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/css-3.png" alt="CSS" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/physics.png" alt="React" class="skill-icon">
+              </div>
+            </div>
           </div>
           <div class="project">
             <a href="https://cinetrial-project.netlify.app/">
@@ -86,6 +110,21 @@
         <div class="project-container">
           <div class="project-info">
             <h2>Zen Quotes</h2>
+            <p>Quote generator to promote inpiration and calmness</p>
+            <div class="skills">
+              <div class="skill-item">
+                <img src="assets/html.png" alt="HTML" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/css-3.png" alt="CSS" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/physics.png" alt="React" class="skill-icon">
+              </div>
+            </div>
           </div>
           <div class="project">
             <a href="https://zen-quotes-cohort-16.netlify.app">
@@ -97,6 +136,21 @@
         <div class="project-container">
           <div class="project-info">
             <h2>Unilife</h2>
+            <p>Student housing mockup</p>
+            <div class="skills">
+              <div class="skill-item">
+                <img src="assets/html.png" alt="HTML" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/css-3.png" alt="CSS" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/physics.png" alt="React" class="skill-icon">
+              </div>
+            </div>
           </div>
           <div class="project">
             <a href="https://unilife-project.netlify.app/">
@@ -108,27 +162,57 @@
         <div class="project-container">
           <div class="project-info">
             <h2>Quick Weather</h2>
+            <p>Minimalistic weather app with weather-based outfit reccomendations</p>
+            <div class="skills">
+              <div class="skill-item">
+                <img src="assets/html.png" alt="HTML" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/css-3.png" alt="CSS" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/java-script.png" alt="JavaScript" class="skill-icon">
+              </div>
+              <div class="skill-item">
+                <img src="assets/physics.png" alt="React" class="skill-icon">
+              </div>
+            </div>
           </div>
-        <div class="project">
-          <a href="https://quick-weather-app.netlify.app/">
-            <img src="assets/quickweather.png" alt="Quick Weather">  
-          </a>
+          <div class="project">
+            <a href="https://quick-weather-app.netlify.app/">
+              <img src="assets/quickweather.png" alt="Quick Weather">  
+            </a>
+          </div>
         </div>
-        </div>
-      </div>
       
   </section>
   
   <!-- Contact content -->
   <section id="contact">
     <div class="contact-content">
-      <h2>Contact Me</h2>
-      <form>
-        <!-- Add your contact form fields here -->
-      </form>
-      <p>
-        <!-- Add your contact information here -->
-      </p>
+      <h2 id="contact-btn">Contact Me</h2>
+
+      <div id="contact-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Contact Me</h2>
+          <form id="contact-form" method="post" action="send_email.php">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+          
+        </div>
     </div>
   </section>
   
