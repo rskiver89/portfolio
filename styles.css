@@ -227,6 +227,7 @@ section {
   width: 80%;
   position: relative;
   border-radius: 8px;
+  margin: 8px;
   z-index: 0;
   }
 
