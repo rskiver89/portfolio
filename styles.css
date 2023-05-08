@@ -337,11 +337,12 @@ textarea {
   resize: none;
 }
   
-#contact-form button {
+.contact-form button {
   background-color: #0070c9;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-weight: bold;
