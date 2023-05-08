@@ -441,9 +441,17 @@ textarea {
       position: absolute;
       top: 450px;
     }
+
+    .rick-morty {
+      top: 500px;
+    }
     
     .project-container {
-      margin: 78px 0;
+      margin: 120px 0;
+    }
+
+    .project img {
+      right: 8px;
     }
   }
 
@@ -452,13 +460,13 @@ textarea {
       position: absolute;
       top: 250px;
     }
+
+    .rick-morty {
+      top: 280px;
+    }
     
     .project-container {
       margin: 78px 0;
-    }
-
-    .project img {
-      right: 8px;
     }
 
     #name-logo {
